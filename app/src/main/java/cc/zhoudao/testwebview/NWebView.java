@@ -30,13 +30,13 @@ public class NWebView extends WebView  {
         WebSettings setting = getSettings();
         setting.setJavaScriptEnabled(true);
         setting.setJavaScriptCanOpenWindowsAutomatically(true);
-        addJavascriptInterface(new JS(), "getSelectedText");
+        addJavascriptInterface(new JS(), "aa");
 
 
     }
 
     public void getSelectText() {
-        loadUrl("javascript:window.getSelectedText.getSelect(window.getSelection().toString());");
+        loadUrl("javascript:window.aa.getSelect(window.getSelection().toString());");
     }
 
 
